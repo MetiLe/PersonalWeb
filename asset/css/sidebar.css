@@ -1,13 +1,14 @@
-@charset "UTF-8";
-/*!
- * Sidebar skeleton
- * Copyright Zdeněk Papučík
- * MIT License
-*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 body {
   overflow-x: hidden;
 }
+.sidebar-brand{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: x-large;
+  margin-top:3.54;
+  text-decoration:none ;
 
+}
 .wrapper {
   min-height: 100vh;
 }
@@ -16,12 +17,13 @@ body {
   min-height: calc(100vh - 3.5rem);
 }
 .wrapper-navbar-fixed {
-  margin-top: 3.5rem;
+  margin-top: 0;
 }
 
 .sidebar {
   margin-left: -14.375rem;
   transition: margin 0.15s ease-out;
+  background-color: white;
 }
 @media (min-width: 768px) {
   .sidebar {
@@ -30,6 +32,8 @@ body {
 }
 .sidebar-toggle {
   margin-left: 0;
+  margin-top:2rem;
+  
 }
 .sidebar-toggle-visible {
   margin-left: 0;
@@ -51,7 +55,7 @@ body {
 }
 
 .sidebar-bg-white {
-  background-color: #fff;
+  background-color:white;
 }
 
 .sidebar-bg-light {
@@ -93,5 +97,19 @@ body {
 .sidebar-bg-cyan {
   background-color: #fafcfc;
 }
+@media only screen and (min-width: 768px) {
+  .navbar{
+display: none;
+  }
+.sidebar-menu{
+  padding:0;
+  left:0;
+}}
+.foot{
+  bottom: 0;
+  padding-top: 16rem;
+  color: grey;
+}
+
 
 /*# sourceMappingURL=sidebar.css.map */
